@@ -1,8 +1,6 @@
 <?php
 namespace cyclonephp\http;
 
-use cyclone\http\RequestBuilder;
-
 class Request {
 	
 	const METHOD_GET = 'GET';
