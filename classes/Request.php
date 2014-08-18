@@ -1,6 +1,8 @@
 <?php
 namespace cyclonephp\http;
 
+use cyclone\http\RequestBuilder;
+
 class Request {
 	
 	const METHOD_GET = 'GET';
@@ -32,6 +34,10 @@ class Request {
 		}
 		return $rval;
 	}
+
+    public static function builder() {
+        return new RequestBuilder;
+    }
     
     public static function initial() {
 		if ( ! empty($_SERVER['PATH_INFO'])) {
