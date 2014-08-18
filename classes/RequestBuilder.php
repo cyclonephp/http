@@ -109,11 +109,11 @@ class RequestBuilder {
     }
 
     public function queryString() {
-        return http_build_str($this->queryParams);
+        return http_build_query($this->queryParams);
     }
 
     public function rawBody() {
-        return http_build_str($this->bodyParams);
+        return http_build_query($this->bodyParams);
     }
 
 }
