@@ -1,5 +1,5 @@
 <?php
-namespace cyclone\http;
+namespace cyclonephp\http;
 
 class Response {
 	
